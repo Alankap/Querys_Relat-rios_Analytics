@@ -8,9 +8,9 @@ SELECT
     -- Perfil
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'q1 perfil'
@@ -20,8 +20,8 @@ SELECT
     -- Nome da instituição
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 2 
           AND mqq.deleted = 'n'
           AND mqq.name = 'q2 Nome da instituição'
@@ -31,9 +31,9 @@ SELECT
     -- Formatos dos objetos educacionais
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Os formatos dos objetos educac'
@@ -43,9 +43,9 @@ SELECT
     -- Qualidade do conteúdo
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'A qualidade do conteúdo dos ma'
@@ -55,8 +55,8 @@ SELECT
     -- Comentários sobre os recursos didáticos
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 3 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Comentários sobre os recursos'
@@ -66,9 +66,9 @@ SELECT
     -- Avaliações do tutor
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'O tutor apresentou o conteúdo'
@@ -78,9 +78,9 @@ SELECT
         -- Frequência do tutor
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'A frequência do tutor na plata'
@@ -90,9 +90,9 @@ SELECT
     -- Capacidade de motivar
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Demostrou capacidade de motiva'
@@ -102,9 +102,9 @@ SELECT
     -- Feedback e esclarecimento de dúvidas
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Apresentou feedback e esclarec'
@@ -114,9 +114,9 @@ SELECT
     -- Postura ético-profissional
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Demonstrou postura ético-profi'
@@ -126,8 +126,8 @@ SELECT
     -- Comentários sobre o instrutor
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 3 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Comentários sobre o instrutor:'
@@ -137,9 +137,9 @@ SELECT
     -- Carga horária adequada
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'A carga horária do curso foi a'
@@ -149,9 +149,9 @@ SELECT
     -- Formato do curso atendeu expectativas
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'O formato do curso atendeu às'
@@ -161,9 +161,9 @@ SELECT
     -- Formas de avaliação foram adequadas
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'As formas de avaliação (lições'
@@ -173,8 +173,8 @@ SELECT
     -- Comentários sobre o curso
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 3 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Comentários sobre o curso:'
@@ -184,9 +184,9 @@ SELECT
     -- Usabilidade da plataforma
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Como avalia a usabilidade da p'
@@ -196,9 +196,9 @@ SELECT
     -- Avaliação do visual da plataforma
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Avalie o visual da plataforma.'
@@ -208,9 +208,9 @@ SELECT
     -- Avaliação do suporte técnico
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Indique o nível de satisfação'
@@ -220,9 +220,9 @@ SELECT
     -- Avaliação dos encontros online
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Encontro online'
@@ -232,8 +232,8 @@ SELECT
     -- Comentários sobre a plataforma e recursos
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 3 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Comentários sobre a interface:'
@@ -243,9 +243,9 @@ SELECT
     -- Conhecimentos úteis no trabalho
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Os conhecimentos serão úteis n'
@@ -255,9 +255,9 @@ SELECT
     -- Nível de satisfação geral
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Seu nível de satisfação geral'
@@ -267,9 +267,9 @@ SELECT
     -- Probabilidade de indicar o curso
     (
         SELECT mqqc.content 
-        FROM mdl_questionnaire_resp_single mqrs
-        JOIN mdl_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrs.question_id
+        FROM g4s7_questionnaire_resp_single mqrs
+        JOIN g4s7_questionnaire_quest_choice mqqc ON mqqc.id = mqrs.choice_id
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrs.question_id
         WHERE mqq.type_id = 4 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Qual a probabilidade de você in'
@@ -279,8 +279,8 @@ SELECT
     -- Espaço para comentários adicionais
     (
         SELECT mqrt.response 
-        FROM mdl_questionnaire_response_text mqrt
-        JOIN mdl_questionnaire_question mqq ON mqq.id = mqrt.question_id
+        FROM g4s7_questionnaire_response_text mqrt
+        JOIN g4s7_questionnaire_question mqq ON mqq.id = mqrt.question_id
         WHERE mqq.type_id = 3 
           AND mqq.deleted = 'n'
           AND mqq.name = 'Espaço para comentários:'
@@ -289,25 +289,25 @@ SELECT
 
 
 FROM 
-    mdl_course mc
+    g4s7_course mc
 JOIN 
-    mdl_enrol me ON me.courseid = mc.id
+    g4s7_enrol me ON me.courseid = mc.id
 JOIN 
-    mdl_context ctx ON mc.id = ctx.instanceid
+    g4s7_context ctx ON mc.id = ctx.instanceid
 JOIN 
-    mdl_role_assignments AS ra ON ra.contextid = ctx.id
+    g4s7_role_assignments AS ra ON ra.contextid = ctx.id
 JOIN 
-    mdl_user AS mu ON mu.id = ra.userid
+    g4s7_user AS mu ON mu.id = ra.userid
 JOIN 
-    mdl_user_enrolments mue ON mue.userid = mu.id AND mue.enrolid = me.id
+    g4s7_user_enrolments mue ON mue.userid = mu.id AND mue.enrolid = me.id
 JOIN 
-    mdl_questionnaire mq ON mq.course = mc.id
+    g4s7_questionnaire mq ON mq.course = mc.id
 JOIN 
-    mdl_questionnaire_response mqr ON mqr.questionnaireid = mq.id AND mqr.userid = mu.id
+    g4s7_questionnaire_response mqr ON mqr.questionnaireid = mq.id AND mqr.userid = mu.id
 LEFT JOIN 
-    mdl_groups_members gm ON gm.userid = mu.id
+    g4s7_groups_members gm ON gm.userid = mu.id
 LEFT JOIN 
-    mdl_groups g ON g.id = gm.groupid
+    g4s7_groups g ON g.id = gm.groupid
 
 WHERE 
     ra.roleid = 5 
